@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="C:\Users\NHNENT\.m2\repository\mysql\mysql-connector-java\5.1.31\mysql-connector-java-5.1.31.jar"/> <!-- maven이면 써줘야 한다. -->
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+    	connectionURL="jdbc:mysql://10.77.185.214/test" userId="tcblog" password="tcblog1234" />
+    <javaModelGenerator targetPackage="com.toast.tcblog.todo.dto" targetProject="MybatisGenerator" />
+    <sqlMapGenerator targetPackage="sqlmap" targetProject="MybatisGenerator" />
+    <javaClientGenerator targetPackage="com.toast.tcblog.todo.dao" targetProject="MybatisGenerator" type="XMLMAPPER" />
+    <table schema="test" tableName="todos" >
+    </table>
+  </context>
+</generatorConfiguration>
